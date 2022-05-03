@@ -1,0 +1,18 @@
+version: 0.0
+os: windows
+files:
+  - source: .\
+    destination: D:\WebStoreApps\WebStore
+hooks:
+  ApplicationStop:
+    - location: \ApplicationStop.bat
+      timeout: 300
+  BeforeInstall:
+    - location: \before-install.bat
+      timeout: 300
+  AfterInstall:
+    - location: \after-install.bat
+      timeout: 300
+  ApplicationStart:
+    - location: \ApplicationStart.bat
+      timeout: 300
