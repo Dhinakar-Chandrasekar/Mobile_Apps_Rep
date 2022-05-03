@@ -2,7 +2,7 @@ version: 0.0
 os: windows
 files:
   - source: .\
-    destination: D:\WebStoreApps\WebStore
+    destination: C:\Z\HHT
 hooks:
   ApplicationStop:
     - location: \ApplicationStop.bat
